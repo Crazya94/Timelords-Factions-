@@ -1,7 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="HumanRace" Name="The_Gallifreyans">
+  <AlienRace.RaceSettings>
+    <defName>Gallifreyan_Settings</defName>
+    <pawnKindSettings>
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>GallifreyanSlave</li>
+          </kindDefs>
+          <chance>40.0</chance>
+        </li>
+      </alienslavekinds>
+      <alienrefugeekinds>
+        <!-- pawnkinds listed here will show up as chased refugees for the event -->
+        <li>
+          <kindDefs>
+            <li>GallifreyanRefugee</li>
+          </kindDefs>
+          <chance>50.0</chance>
+        </li>
+      </alienrefugeekinds>
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>GallifreyanPlayerColonist</li>
+              </kindDefs>
+              <chance>10.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>GallifreyanPlayerColony</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+      <alienwandererkinds>
+        <!-- pawnkinds listed here will show up as wanders that join your colony for the event -->
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>Gallifreyan_Colonist</li>
+              </kindDefs>
+              <chance>50.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>GallifreyanPlayerColony</li>
+          </factionDefs>
+        </li>
+      </alienwandererkinds>
+    </pawnKindSettings>
+  
+  
+  <ThingDef ParentName="Gallifreyan" Name="The_Gallifreyans">
     <defName>Gallifreyans</defName>
     <label>Gallifreyan</label>
     <description>A humanoid species native to the planet Gallifrey. The majority of Time Lords were Gallifreyans.</description>
@@ -16,7 +69,61 @@
 	  -->
     </statBases>
     <tools>
-	
+	<li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
     </tools>
     <race>
 	  <useMeatFrom>Human</useMeatFrom>
@@ -84,7 +191,7 @@
 	  </hediffGiverSets>
     </race>
     <recipes>
-	<!--
+
       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
       <li>InstallArchotechLeg</li>
@@ -114,8 +221,30 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
-    -->
+ 
 	</recipes>
   </ThingDef>
+    </AlienRace.RaceSettings>
+
+  <!-- ====================== RACE PAWNKINDDEF ABSTRACT ====================== -->
+  <PawnKindDef>
+    <defName>Gallifreyan</defName>
+    <label>Gallifreyans</label>
+    <race>Gallifreyans</race>
+    <defaultFactionType>TheGallifreyans</defaultFactionType>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <combatPower>400</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
 
 </Defs>
