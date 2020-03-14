@@ -38,6 +38,11 @@
 									<tools>
 									
 									</tools>
+									<comps>
+									  <li>
+										<compClass>TimeLords.Comp_TimeLord</compClass>
+									  </li>
+									</comps>
 									<race>
 									<!--
 									  <thinkTreeMain>Humanlike</thinkTreeMain>
@@ -45,6 +50,7 @@
 									  <intelligence>Humanlike</intelligence>
 									  <makesFootprints>true</makesFootprints>
 									  -->
+									  <deathActionWorkerClass>TimeLords.DeathActionWorker_TimeLord</deathActionWorkerClass>
 									  <leatherDef>Leather_Human</leatherDef>
 									  <useMeatFrom>Human</useMeatFrom>
 									  <nameCategory>HumanStandard</nameCategory>
@@ -87,7 +93,7 @@
 										<offset>(0,0,-0.3)</offset>
 										-->
 									  </specialShadowData>
-									  <ageGenerationCurve>
+									  <ageGenerationCurve Inherit="false">
 										<points>
 										  <li>(14,0)</li>
 										  <li>(16,100)</li>
@@ -105,17 +111,17 @@
 									</race>
 									<alienRace>
 										<generalSettings>
-                      <forcedRaceTraitEntries>
-                        <li>
-                          <defName>PsychicSensitivity</defName>
-                          <degree>-1</degree>
-                          <chance>100</chance>
-                        </li>
-                        <li>
-                        <defName>TooSmart</defName>
-                        <chance>100</chance>
-                        </li>
-                      </forcedRaceTraitEntries>
+										  <forcedRaceTraitEntries>
+											<li>
+											  <defName>PsychicSensitivity</defName>
+											  <degree>-1</degree>
+											  <chance>100</chance>
+											</li>
+											<li>
+											<defName>TooSmart</defName>
+											<chance>100</chance>
+											</li>
+										  </forcedRaceTraitEntries>
 										<humanRecipeImport>true</humanRecipeImport>
 											<alienPartGenerator>
 												<!--
@@ -222,15 +228,7 @@
 
 								</value>
 							</match>
-							<!--
-							<nomatch Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName = "Gun_DoomsdayRocket"]</xpath>
-								<value>
-								
-								</value>
-							</nomatch>
-							-->
+							
 						</li>
 						<li Class="PatchOperationAdd">
 						  <xpath>Defs</xpath>

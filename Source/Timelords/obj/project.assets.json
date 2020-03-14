@@ -521,11 +521,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\HediffCompRaceChanger\\HediffCompRaceChanger.csproj",
-      "projectName": "HediffCompRaceChanger",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\HediffCompRaceChanger\\HediffCompRaceChanger.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Timelords-Factions-\\Source\\Timelords\\TimeLords.csproj",
+      "projectName": "TimeLords",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Timelords-Factions-\\Source\\Timelords\\TimeLords.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\HediffCompRaceChanger\\obj\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Timelords-Factions-\\Source\\Timelords\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

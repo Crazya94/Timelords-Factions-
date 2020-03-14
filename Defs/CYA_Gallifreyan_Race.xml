@@ -18,6 +18,11 @@
     <tools>
 	
     </tools>
+    <comps>
+      <li>
+        <compClass>TimeLords.Comp_TimeLord</compClass>
+      </li>
+    </comps>
     <race>
 	  <useMeatFrom>Human</useMeatFrom>
 	<!--
@@ -26,6 +31,7 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
 	  -->
+	  <deathActionWorkerClass>TimeLords.DeathActionWorker_TimeLord</deathActionWorkerClass>
       <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <lifeExpectancy>80</lifeExpectancy>

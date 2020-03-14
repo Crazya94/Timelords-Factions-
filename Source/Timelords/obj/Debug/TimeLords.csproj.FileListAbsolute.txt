@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Assemblies\TimeLords.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Assemblies\TimeLords.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Source\Timelords\obj\Debug\TimeLords.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Source\Timelords\obj\Debug\TimeLords.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Source\Timelords\obj\Debug\TimeLords.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Timelords-Factions-\Source\Timelords\obj\Debug\TimeLords.pdb
