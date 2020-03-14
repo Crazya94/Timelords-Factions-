@@ -3,12 +3,12 @@
 
 
   <FactionDef>
-    <defName>TheGallifreyans</defName>
+    <defName>CYA_Gallifreyan_Faction</defName>
     <label>Gallifreyan</label>
     <description>A humanoid species native to the planet Gallifrey. The majority of Time Lords were Gallifreyans.</description>
     <pawnSingular>Gallifreyan</pawnSingular>
     <pawnsPlural>Gallifreyans</pawnsPlural>
-    <basicMemberKind>Gallifreyan</basicMemberKind>
+    <basicMemberKind>CYA_Gallifreyan</basicMemberKind>
     <listOrderPriority>10</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -52,7 +52,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Gallifreyan>10</Gallifreyan>
+          <CYA_Gallifreyan>10</CYA_Gallifreyan>
         
       </options>
       </li>
@@ -60,7 +60,7 @@
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
-          <Gallifreyan>2</Gallifreyan>
+          <CYA_Gallifreyan>2</CYA_Gallifreyan>
         
       </options>
       </li>

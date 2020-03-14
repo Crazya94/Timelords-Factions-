@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- ====================== RACE PAWNKINDDEF ABSTRACT ====================== -->
+
+  <!-- ====================== RACE PAWNKINDDEF ABSTRACT ====================== -->
   <PawnKindDef>
-    <defName>gallifreyan</defName>
-    <label>gallifreyans</label>
-    <race>gallifreyan</race>
-    <defaultFactionType>TheGallifreyans</defaultFactionType>
+    <defName>CYA_Gallifreyan</defName>
+    <label>Gallifreyan</label>
+    <race>CYA_Gallifreyan</race>
+    <defaultFactionType>CYA_Gallifreyan_Faction</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -19,5 +20,5 @@
       <li>MechanoidGunHeavy</li>
     </weaponTags>
   </PawnKindDef>
-  
+
 </Defs>

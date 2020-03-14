@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Defs\Bodies\Bodies_Humanlike.xml -->
+	<!-- Human Humanoid Alien Races 2.0 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Humanoid Alien Races 2.0</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<!-- Human Subraces -->
+						<!-- Gallifreyan -->
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName="CYA_Gallifreyan"]</xpath>
+							<success>Always</success>
+							<match Class="PatchOperationReplace">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName="CYA_Gallifreyan"]</xpath>
+								<value>
+								
+								  <AlienRace.ThingDef_AlienRace ParentName="HumanRace" Name="CYA_Gallifreyan">
+									<defName>CYA_Gallifreyan</defName>
+									<label>human</label>
+									<description>A humanoid species native to the planet Gallifrey. The majority of Time Lords were Gallifreyans.</description>
+									<statBases>
+									  <MarketValue>1750</MarketValue>
+									  <!--
+									  <MoveSpeed>4.6</MoveSpeed>
+									  <Flammability>1.0</Flammability>
+									  <ComfyTemperatureMin>16</ComfyTemperatureMin>
+									  <ComfyTemperatureMax>26</ComfyTemperatureMax>
+									  <LeatherAmount>50</LeatherAmount>
+									  -->
+									</statBases>
+									<tools>
+									
+									</tools>
+									<race>
+									<!--
+									  <thinkTreeMain>Humanlike</thinkTreeMain>
+									  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+									  <intelligence>Humanlike</intelligence>
+									  <makesFootprints>true</makesFootprints>
+									  -->
+									  <leatherDef>Leather_Human</leatherDef>
+									  <useMeatFrom>Human</useMeatFrom>
+									  <nameCategory>HumanStandard</nameCategory>
+									  <lifeExpectancy>80</lifeExpectancy>
+									  <body>lords</body>
+									  <baseBodySize>1</baseBodySize>
+									  <baseHealthScale>1</baseHealthScale>
+									  <foodType>OmnivoreHuman</foodType>
+									  <!--
+									  <gestationPeriodDays>45</gestationPeriodDays>
+									  <meatMarketValue>0.8</meatMarketValue>
+									  <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+									  <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+									  -->
+									  <lifeStageAges Inherit="false">
+										<li>
+										  <def>HumanlikeBaby</def>
+										  <minAge>0</minAge>
+										</li>
+										<li>
+										  <def>HumanlikeToddler</def>
+										  <minAge>1.2</minAge>
+										</li>
+										<li>
+										  <def>HumanlikeChild</def>
+										  <minAge>4</minAge>
+										</li>
+										<li>
+										  <def>HumanlikeTeenager</def>
+										  <minAge>13</minAge>
+										</li>
+										<li>
+										  <def>HumanlikeAdult</def>
+										  <minAge>18</minAge>
+										</li>
+									  </lifeStageAges>
+									  <specialShadowData>
+									  <!--
+										<volume>(0.3, 0.8, 0.4)</volume>
+										<offset>(0,0,-0.3)</offset>
+										-->
+									  </specialShadowData>
+									  <ageGenerationCurve>
+										<points>
+										  <li>(14,0)</li>
+										  <li>(16,100)</li>
+										  <li>(50,100)</li>
+										  <li>(60,30)</li>
+										  <li>(70,18)</li>
+										  <li>(80,10)</li>
+										  <li>(90,3)</li>
+										  <li>(100,0)</li>
+										</points>
+									  </ageGenerationCurve>
+									  <hediffGiverSets>
+									  
+									  </hediffGiverSets>
+									</race>
+									<alienRace>
+										<generalSettings>
+										<humanRecipeImport>true</humanRecipeImport>
+											<alienPartGenerator>
+												<!--
+												<aliencrowntypes>
+													<li>Average_Normal</li>
+													<li>Average_Wide</li>
+													<li>Average_Pointy</li>
+													<li>Narrow_Normal</li>
+													<li>Narrow_Pointy</li>
+													<li>Narrow_Wide</li>
+												</aliencrowntypes>
+												<alienbodytypes>
+													<li>Thin</li>
+													<li>Hulk</li>
+													<li>Female</li>
+													<li>Male</li>
+												</alienbodytypes>
+												-->
+												<bodyAddons>
+												</bodyAddons>
+											</alienPartGenerator>
+										</generalSettings>
+										<graphicPaths>
+										</graphicPaths>
+										<hairSettings>
+										</hairSettings>
+										<thoughtSettings>
+											<cannotReceiveThoughts>
+											</cannotReceiveThoughts>
+											<canStillReceiveThoughts>
+											</canStillReceiveThoughts>
+										</thoughtSettings>
+										<relationSettings>
+											<renamer>
+											</renamer>
+										</relationSettings>
+										<raceRestriction>
+											<apparelList>
+											</apparelList>
+											<whiteApparelList>
+											</whiteApparelList>
+											<weaponList>
+											</weaponList>
+											<whiteWeaponList>
+											</whiteWeaponList>
+											<buildingList>
+											</buildingList>
+											<whiteBuildingList>
+											</whiteBuildingList>
+											<recipeList>
+											</recipeList>
+											<plantList>
+											</plantList>
+											<whitePlantList>
+											</whitePlantList>
+											<traitList>
+											</traitList>
+											<whiteTraitList>
+											</whiteTraitList>
+											<foodList>
+											</foodList>
+											<petList>
+											</petList>
+											<conceptList>
+											</conceptList>
+											<workGiverList>
+											</workGiverList>
+										</raceRestriction>
+									</alienRace>
+									<recipes>
+									<!--
+									  <li>InstallArchotechEye</li>
+									  <li>InstallArchotechArm</li>
+									  <li>InstallArchotechLeg</li>
+									  <li>InstallPowerClaw</li>
+									  <li>InstallBionicEye</li>
+									  <li>InstallBionicArm</li>
+									  <li>InstallBionicLeg</li>
+									  <li>InstallBionicSpine</li>
+									  <li>InstallBionicHeart</li>
+									  <li>InstallBionicStomach</li>
+									  <li>InstallBionicEar</li>
+									  <li>InstallSimpleProstheticArm</li>
+									  <li>InstallSimpleProstheticLeg</li>
+									  <li>InstallSimpleProstheticHeart</li>
+									  <li>InstallCochlearImplant</li>
+									  <li>InstallPegLeg</li>
+									  <li>InstallWoodenFoot</li>
+									  <li>InstallDenture</li>
+									  <li>InstallJoywire</li>
+									  <li>InstallPainstopper</li>
+									  <li>InstallNaturalHeart</li>
+									  <li>InstallNaturalLung</li>
+									  <li>InstallNaturalKidney</li>
+									  <li>InstallNaturalLiver</li>
+									  <li>ExciseCarcinoma</li>
+									  <li>AdministerMechSerumHealer</li>
+									  <li>RemoveBodyPart</li>
+									  <li>Euthanize</li>
+									  <li>Anesthetize</li>
+									-->
+									</recipes>
+								  </AlienRace.ThingDef_AlienRace>
+
+								</value>
+							</match>
+							<!--
+							<nomatch Class="PatchOperationAdd">
+								<success>Always</success>
+								<xpath>Defs/ThingDef[defName = "Gun_DoomsdayRocket"]</xpath>
+								<value>
+								
+								</value>
+							</nomatch>
+							-->
+						</li>
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs</xpath>
+						  <success>Always</success>
+							<value>
+							  <AlienRace.RaceSettings>
+								<defName>Gallifreyan_Settings</defName>
+								<pawnKindSettings>
+								  <alienslavekinds>
+									<li>
+									  <kindDefs>
+										<li>GallifreyanSlave</li>
+									  </kindDefs>
+									  <chance>40.0</chance>
+									</li>
+								  </alienslavekinds>
+								  <alienrefugeekinds>
+									<!-- pawnkinds listed here will show up as chased refugees for the event -->
+									<li>
+									  <kindDefs>
+										<li>GallifreyanRefugee</li>
+									  </kindDefs>
+									  <chance>50.0</chance>
+									</li>
+								  </alienrefugeekinds>
+								  <startingColonists>
+									<li>
+									  <pawnKindEntries>
+										<li>
+										  <kindDefs>
+											<li>GallifreyanPlayerColonist</li>
+										  </kindDefs>
+										  <chance>10.0</chance>
+										</li>
+									  </pawnKindEntries>
+									  <factionDefs>
+										<li>GallifreyanPlayerColony</li>
+									  </factionDefs>
+									</li>
+								  </startingColonists>
+								  <alienwandererkinds>
+									<!-- pawnkinds listed here will show up as wanders that join your colony for the event -->
+									<li>
+									  <pawnKindEntries>
+										<li>
+										  <kindDefs>
+											<li>Gallifreyan_Colonist</li>
+										  </kindDefs>
+										  <chance>50.0</chance>
+										</li>
+									  </pawnKindEntries>
+									  <factionDefs>
+										<li>GallifreyanPlayerColony</li>
+									  </factionDefs>
+									</li>
+								  </alienwandererkinds>
+								</pawnKindSettings>
+								</AlienRace.RaceSettings>
+							</value>
+						</li>
+	
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+						  <xpath>Defs/ThingDef[@Name="HumanRace"]</xpath>
+						  <success>Invert</success>
+						</li>
+						<li Class="PatchOperationAttributeSet">
+						  <xpath>/Defs/ThingDef[defName = "Human"]</xpath>
+							<attribute>Name</attribute>
+							<value>HumanRace</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+		</operations>	
+	</Operation>
+	 
+</Patch>
