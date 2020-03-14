@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- ====================== RACE PAWNKINDDEF ABSTRACT ====================== -->
+  <PawnKindDef>
+    <defName>gallifreyan</defName>
+    <label>gallifreyans</label>
+    <race>gallifreyan</race>
+    <defaultFactionType>TheGallifreyans</defaultFactionType>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <combatPower>400</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidGunHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+</Defs>
