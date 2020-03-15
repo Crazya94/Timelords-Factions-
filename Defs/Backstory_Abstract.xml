@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TimeLords.BackstoryDef Name="CYA_TimeLord_Base_Backstory" Abstract="True">
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <spawnCategories>
+		<li>TimeLord_Standard</li>
+	</spawnCategories>
+  </TimeLords.BackstoryDef>
+	
+  <TimeLords.BackstoryDef ParentName="CYA_TimeLord_Base_Backstory" Name="CYA_TimeLord_Base_Child_Backstory" Abstract="True">
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <spawnCategories>
+	
+	</spawnCategories>
+  </TimeLords.BackstoryDef>
+	
+  <TimeLords.BackstoryDef ParentName="CYA_TimeLord_Base_Backstory" Name="CYA_TimeLord_Base_Adult_Backstory" Abstract="True">
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <spawnCategories>
+	
+	</spawnCategories>
+  </TimeLords.BackstoryDef>
+	
+</Defs>
