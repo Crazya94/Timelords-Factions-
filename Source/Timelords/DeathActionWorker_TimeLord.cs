@@ -25,8 +25,10 @@ namespace TimeLords
 			{
 				if (timeLord.TimesRegenerated<12)
 				{
-					timeLord.TimesRegenerated++;
+					int regens = timeLord.TimesRegenerated;
+					regens++;
 					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(corpse.InnerPawn.kindDef, faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 0f, false, false, false, false, false, false, false, false, 0, null, 1, null, null, null));
+					pawn.TryGetComp<Comp_TimeLord>().TimesRegenerated = regens;
 					GenSpawn.Spawn(pawn, corpse.Position, corpse.Map, Rot4.Random);
 					pawn.Name = name;
 					pawn.relations = relations;
