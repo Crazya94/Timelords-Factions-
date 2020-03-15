@@ -23,7 +23,7 @@ namespace TimeLords
 			Comp_TimeLord timeLord = corpse.InnerPawn.TryGetComp<Comp_TimeLord>();
 			if (timeLord!=null)
 			{
-				if (timeLord.TimesRegenerated<12)
+				if (timeLord.TimesRegenerated<13)
 				{
 					int regens = timeLord.TimesRegenerated;
 					regens++;
